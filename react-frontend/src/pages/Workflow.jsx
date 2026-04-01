@@ -68,6 +68,53 @@ export default function Workflow() {
         </p>
       </div>
 
+      {/* ── EasyFlow: Simplified Overview ──────────────────── */}
+      <div className="max-w-6xl mx-auto mb-24">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-2xl font-bold text-white mb-2">EasyFlow Overview</h2>
+          <p className="text-slate-500 text-sm italic">Samjhiye AI prediction kaise kaam karta hai — ek minute mein.</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+          {/* Quick Step 1 */}
+          <div className="glass rounded-3xl p-8 border border-white/5 relative z-10 hover:border-primary/20 transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-primary/20 flex items-center justify-center text-2xl mb-5">📝</div>
+            <h3 className="font-display text-lg font-extrabold text-white mb-3">1. Aapki Details (Input)</h3>
+            <p className="text-sm text-slate-400 leading-relaxed italic">
+              Bas 2 minute mein apne school aur lifestyle ki details bhariye — jaise study time, absences, aur social details.
+            </p>
+          </div>
+
+          {/* Quick Step 2 */}
+          <div className="glass rounded-3xl p-8 border border-white/5 relative z-10 hover:border-secondary/20 transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-2xl mb-5">🧠</div>
+            <h3 className="font-display text-lg font-extrabold text-white mb-3">2. AI ka Dimag (Analysis)</h3>
+            <p className="text-sm text-slate-400 leading-relaxed italic">
+              Hamara AI engine aapke data ko algorithmically analyze karta hai aur use "Real Student Database" se compare karta hai.
+            </p>
+          </div>
+
+          {/* Quick Step 3 */}
+          <div className="glass rounded-3xl p-8 border border-white/5 relative z-10 hover:border-accent/20 transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-accent/20 flex items-center justify-center text-2xl mb-5">✨</div>
+            <h3 className="font-display text-lg font-extrabold text-white mb-3">3. Aapka Result (Output)</h3>
+            <p className="text-sm text-slate-400 leading-relaxed italic">
+              Aapko milta hai ek instant "Pass" ya "Fail" prediction aur ye bhi pata chalta hai ki result kis basis pe aaya hai.
+            </p>
+          </div>
+
+          {/* Connecting Arrows (Desktop Only) */}
+          <div className="absolute top-1/2 left-[31.5%] -translate-y-1/2 text-2xl hidden md:block text-slate-700">→</div>
+          <div className="absolute top-1/2 left-[65%] -translate-y-1/2 text-2xl hidden md:block text-slate-700">→</div>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h2 className="font-display text-3xl font-extrabold text-white mb-2">Technical Deep-Dive</h2>
+        <p className="text-slate-500 text-sm">For those who want to see the complete technical architecture below.</p>
+        <div className="w-12 h-1 bg-primary/20 mx-auto mt-4 rounded-full" />
+      </div>
+
       {/* Timeline Section */}
       <div className="max-w-5xl mx-auto relative">
         
