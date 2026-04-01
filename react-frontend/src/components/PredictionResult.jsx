@@ -232,16 +232,17 @@ export default function PredictionResult({ result }) {
 
           {/* Formula explanation */}
           <div className="glass rounded-xl p-4">
-            <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mb-3">📐 Scoring Formula</p>
+            <p className="text-xs text-slate-400 uppercase tracking-wider font-bold mb-3">📐 Scoring Basis</p>
             <div className="space-y-1.5 font-mono text-xs text-slate-400">
-              <p>Score = <span className="text-primary">0.329</span> × (Prev.Grades / 65.42)</p>
-              <p>      + <span className="text-primary">0.328</span> × (Attendance / 75.41)</p>
-              <p>      + <span className="text-primary">0.286</span> × (Study Hours / 9.96)</p>
-              <p>      + <span className="text-primary">0.039</span> × (Parent Edu / 2.37)</p>
-              <p>      + <span className="text-primary">0.017</span> × (Extracurricular)</p>
+              <p className="text-primary font-bold hover:text-white transition-colors cursor-help" title="Probability is the mean of all tree predictions">
+                P(Pass) = (1/N_trees) * Σ Pᵢ(y=1|X)
+              </p>
+              <p className="text-slate-500 mt-2">
+                Prediction uses 200 Decision Trees. Node splits are based on <b>Gini Impurity</b> index.
+              </p>
               <div className="border-t border-white/10 mt-2 pt-2">
-                <p>Your Score = <span className="text-accent font-bold">{result.score}</span></p>
-                <p>Pass if Score ≥ <span className="text-yellow-400 font-bold">{result.threshold}</span>
+                <p>Confidence: <span className="text-accent font-bold">{result.confidence}%</span></p>
+                <p>Pass if P(Pass) ≥ <span className="text-yellow-400 font-bold">50%</span>
                   &nbsp;→&nbsp;
                   <span className={isPass ? 'text-green-400 font-bold' : 'text-red-400 font-bold'}>
                     {isPass ? 'PASS ✓' : 'FAIL ✗'}

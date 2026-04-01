@@ -3,6 +3,7 @@
  * Dataset info, model details, and feature importances
  */
 import DatasetSection from '../components/DatasetSection';
+import ModelMathematics from '../components/ModelMathematics';
 
 export default function About() {
   return (
@@ -20,6 +21,12 @@ export default function About() {
       </div>
 
       <DatasetSection />
+      
+      <div className="max-w-7xl mx-auto px-6 my-20">
+        <div className="border-t border-white/5" />
+      </div>
+
+      <ModelMathematics />
     </div>
   );
 }
