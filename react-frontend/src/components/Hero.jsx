@@ -1,7 +1,9 @@
 /**
  * Hero.jsx
- * Landing hero section with animated headline, stats, and a floating illustration.
+ * Landing hero section — now uses React Router Link for CTA.
  */
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -34,18 +36,17 @@ export default function Hero() {
           ))}
         </div>
 
-        <a
-          href="#predictor"
+        <Link
+          to="/predictor"
           className="inline-block px-8 py-4 rounded-2xl font-bold text-white bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30 hover:opacity-90 active:scale-95 transition-all duration-200"
         >
           Try the Predictor →
-        </a>
+        </Link>
       </div>
 
       {/* Right: Floating Illustration */}
       <div className="flex justify-center items-center">
         <div className="relative">
-          {/* Glow Ring */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary/20 to-secondary/20 blur-3xl" />
           <img
             src="/hero_image.png"
