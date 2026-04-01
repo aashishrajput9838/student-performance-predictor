@@ -42,8 +42,12 @@ export default function App() {
       {/* Footer */}
       <footer className="text-center py-8 text-xs text-slate-600">
         <p>
-          © 2026 EduAI Analytics · Built with React + Tailwind CSS · Powered by Machine Learning
-          <br />
+          Made with{' '}
+          <span className="text-red-500 animate-pulse inline-block">♥</span>
+          {' '}by{' '}
+          <span className="text-slate-400 font-semibold">Aashish Rajput</span>
+        </p>
+        <p className="mt-1">
           Dataset:{' '}
           <a
             href="https://archive.ics.uci.edu/dataset/320/student+performance"
