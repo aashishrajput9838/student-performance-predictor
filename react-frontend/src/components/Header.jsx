@@ -7,8 +7,8 @@ export default function Header() {
     <header className="glass sticky top-0 z-50 shadow-lg shadow-black/20">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <span className="font-display text-2xl font-extrabold text-gradient">
-          EduAI.
+        <span className="font-display text-lg font-extrabold text-gradient tracking-widest uppercase">
+          Student Performance Predictor
         </span>
 
         {/* Nav Links */}
