@@ -36,12 +36,20 @@ export default function Hero() {
           ))}
         </div>
 
-        <Link
-          to="/predictor"
-          className="inline-block px-8 py-4 rounded-2xl font-bold text-white bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30 hover:opacity-90 active:scale-95 transition-all duration-200"
-        >
-          Try the Predictor →
-        </Link>
+        <div className="flex flex-wrap gap-4">
+          <Link
+            to="/predictor"
+            className="px-8 py-4 rounded-2xl font-bold text-white bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30 hover:opacity-90 active:scale-95 transition-all duration-200"
+          >
+            Try the Predictor →
+          </Link>
+          <Link
+            to="/workflow"
+            className="px-8 py-4 rounded-2xl font-bold text-slate-400 glass border border-white/10 hover:border-white/20 hover:text-white transition-all duration-200"
+          >
+            How it Works
+          </Link>
+        </div>
       </div>
 
       {/* Right: Floating Illustration */}

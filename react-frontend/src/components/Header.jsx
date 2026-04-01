@@ -8,7 +8,8 @@ import { NavLink, Link } from 'react-router-dom';
 const NAV_LINKS = [
   { to: '/',          label: 'Home' },
   { to: '/predictor', label: 'Predictor' },
-  { to: '/about',     label: 'About' },
+  { to: '/workflow',  label: 'How it Works' },
+  { to: '/about',     label: 'Database' },
 ];
 
 export default function Header() {

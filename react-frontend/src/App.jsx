@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Predictor from './pages/Predictor';
 import About from './pages/About';
+import Workflow from './pages/Workflow';
 import { warmUpAPI } from './utils/predictor';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/"          element={<Home />} />
             <Route path="/predictor" element={<Predictor />} />
             <Route path="/about"     element={<About />} />
+            <Route path="/workflow"  element={<Workflow />} />
             {/* Catch-all → Home */}
             <Route path="*"          element={<Home />} />
           </Routes>
