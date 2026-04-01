@@ -1,0 +1,41 @@
+{
+  "feature_names": [
+    "Study Hours per Week",
+    "Attendance Rate",
+    "Previous Grades",
+    "Extracurricular",
+    "Parent Education Level"
+  ],
+  "means": [
+    9.964602499999996,
+    75.41196249999993,
+    65.41816749999995,
+    0.4743,
+    2.37155
+  ],
+  "stds": [
+    4.9040268929721185,
+    19.887703101378822,
+    16.08659398977745,
+    0.49933907317571113,
+    0.9942588181655204
+  ],
+  "lr_accuracy": 0.5279,
+  "rf_accuracy": 0.503,
+  "feature_importances": {
+    "Study Hours per Week": 0.2864,
+    "Attendance Rate": 0.328,
+    "Previous Grades": 0.329,
+    "Extracurricular": 0.0173,
+    "Parent Education Level": 0.0393
+  },
+  "parent_edu_map": {
+    "High School": 1,
+    "Associate": 2,
+    "Bachelor": 3,
+    "Master": 4,
+    "PhD": 5,
+    "null": 2
+  },
+  "pass_threshold_info": "Model uses sklearn predict \u2014 threshold = 0.5 probability"
+}

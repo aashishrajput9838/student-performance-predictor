@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.env
+.env.local
+*.log
+
+# Large model files — keep only UCI model (2.2 MB), skip the 145 MB one
+rf_model.pkl
+
+# Node
+react-frontend/node_modules/
+react-frontend/dist/
+react-frontend/.env.local
+react-frontend/.env.production.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
